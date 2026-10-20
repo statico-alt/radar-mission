@@ -1,0 +1,5 @@
+# One compare.py run per line. Route: start Game B, level 1.
+# Gameplay.
+9000 600:down 630:start 1300:a 1400:start 1500:a 2000:a 2500:a 2600:down 2700:a 4600:right 4700:a 5000:left 5300:a 6000:up 6500:a 7000:b 7500:a @drawMetasprite @updateScreenEffects @placeShips @initShipArrays @updateWeaponFlags @initObjectSlot @countGroupRun @randomMasked @initScaledTable @loadLevelLayout
+# Forced game over screen (level 4, 2 deaths).
+9000 600:down 630:start 1300:a 1400:start 1500:a 2000:a 2500:a 2600:down 2700:a 5000:d334=1 5000:d335=2 5000:d002=8b 5000:d377=4 5000:d378=ff 5000:d005=2d @drawSixAnimSprites @drawDeathTallies

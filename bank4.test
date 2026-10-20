@@ -1,0 +1,7 @@
+# One compare.py run per line. Sound driver (bank 4 and bank 12).
+# Game A: title music, Game A music and SFX, fade in and fast fade out.
+3450 630:start 700:down 730:down 760:down 790:down 820:down 850:a 1300:a 1400:a 1500:a 1600:a 1700:a 2100:start 2310:a 2360:a 2410:a 2460:a 2510:a 2560:a 2610:a 2660:a 2710:a 2760:a 2810:a 2860:a 2910:a 2960:a 3010:a 3060:a 3110:a 3160:a 3210:a 3260:a 3310:a 3360:a 3410:a @musicInitSong @musicLoadSongPan @musicReadCommand @musicRunCommand @musicApplyVibrato @musicCmd_SetInstrument @musicNextPattern @musicLoadWaveRam @sfxUpdate @sfx03_Start @sfx0A_Start @noiseSfx03_Start @noiseSfx07_Start @soundCmd_FadeOutFast @soundFadeIn_Start
+# Game B: music, SFX, pause and resume.
+4200 600:down 630:start 1300:a 1400:start 1500:a 2000:a 2500:a 2600:down 2700:a 3400:start 3700:start @soundCmd_Pause @soundCmd_Resume @soundResetChannels @musicStop @musicSilence @soundCmd_FadeOutFast @soundFadeUpdate @soundRestoreVolume @sfx1B_Start @sfx05_Start @noiseSfxUpdate @soundCmdUpdate @soundUpdateFade
+# Game A with pokes: song $0c saves song 5, song 5 resumes it, SoundCue1, fade out.
+3700 630:start 700:down 730:down 760:down 790:down 820:down 850:a 1300:a 1400:a 1500:a 1600:a 1700:a 2100:start 2310:a 2360:a 2410:a 2460:a 2510:a 2560:a 2610:a 2660:a 2710:a 2760:a 2800:dec8=1 2900:dea8=c 3150:dea8=5 3300:deb0=3 @musicSaveState @musicRestoreState @soundCue1_Start @soundCue1_Update @soundCmd_FadeOut @soundFadeUpdate @musicStop

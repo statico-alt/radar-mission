@@ -1,0 +1,3 @@
+# One compare.py run per line. Bank 0 C: main loop, title, IRQ bodies, far copy.
+# Game A vs COM: title (1P/2P, Game A), arrange screen, first shots.
+3000 600:start 700:down 730:down 760:up 790:down 820:down 900:a 1600:a 1700:a 1800:start 1921:a 2400:a 2800:right 2900:a @softReset @titleUpdate @irqVBlank @irqTimer @irqStatGameA @irqSerial @farCopy @FarCall

@@ -1,0 +1,8 @@
+*.o
+*.s
+*.sdasm
+*.png
+*.gb
+game.sym
+game.map
+__pycache__/
